@@ -1,0 +1,153 @@
+/* universal selector
+*{
+    font-family: "Courier New";
+} */
+
+
+/* element selector */
+h1, h3{
+    color:#b92b27;
+
+}
+
+/* Id selector */
+#login{
+    background-color:wheat;
+}
+#signup{
+    background-color:antiquewhite;
+}
+
+/* class selector */
+.upvote{
+    background-color: azure;
+    color: green;
+}
+
+/* descendant selector: style in a specific part of specific elements/tags */
+.post a{
+    color:purple;
+    background-color: bisque;
+    font-weight: bold;
+}
+nav ul li{
+    color: brown;
+}
+nav ul li a{
+    color: rgb(61, 5, 121);
+    font-weight: 500;
+}
+
+/* sibling combinator: style in a type of tag after a type of tag  */
+p + h2{
+    color: darkcyan;
+}
+p + h3{
+    text-decoration: underline;
+    text-decoration-color: rgb(150, 92, 22) ;
+}
+.upvote + button{
+    background-color: darkkhaki;
+    color: rgb(16, 16, 137);
+    font-weight: bold;
+}
+
+/* child combinator: selects all buttons which are direct children of span
+    here we can go online inside by one step of tag not more than that */
+div> input{
+    background-color: darkgray;
+    font-size: 19px;
+    text-align: right;
+}
+
+/* attribute selector: selects elements based on the presence or value of a given attribute */
+input[type="text"]{
+    color: blue;
+}
+input[type="password"]{
+    color: crimson;
+}
+
+
+
+/* #myid p{
+    color:mediumpurple;
+}   OR  */
+div[id="myid"]{
+    color:mediumpurple;
+}
+
+
+/* pseudo class*/
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+h3:hover{
+    text-decoration: none;
+}
+
+button:active{
+    background-color: darkgreen;
+}
+
+p:active{
+    font-weight: bold;
+    color:blueviolet;
+}
+
+input[id="yes"]:checked + label{
+    color:green;
+    font-weight: bold;
+}
+input[id="no"]:checked + label{
+    color:red;
+    font-weight: bold;
+}
+
+.post:nth-of-type(2n){
+    background-color:antiquewhite ;
+}
+
+/* pseudo element :- A keyword added to a selector that lets you style a specific part of the selected element(s) */
+h1::first-letter{
+    color: black;
+    font-family:Georgia;
+}
+p[id="random"]::first-line{
+    color: rgb(35, 56, 3);
+}
+p[id="random"]::selection{
+    background-color: yellow;
+}
+
+
+/* CSS: Cascading StyleSheet: 
+    What is cascade in CSS?
+    The CSS cascadee algorithm's job iis to select CSS declartion in order to determine the correct values for CSS properties.
+    Last defining property and value will consider.
+
+    Selector Specifity:
+    Specifity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+    id > class,attribute & pseudo class > element & pseudo-element
+    if specificity same then cascading applied
+
+    ** inline style are more specific than id.
+    i.e.: inline style > id > class,attribute & pseudo class > element & pseudo-element
+*/
+
+
+/* property more important than even inline property:  !important
+    To show the most specific thing in document.
+    Rarely used.
+*/
+
+h3{
+    background-color: aliceblue !important;
+}
+
+/* Display:
+    It sets whether an element is treated as a block or inline element
+    and the layout used for its childres
+    its similar to type casting */

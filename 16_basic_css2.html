@@ -1,0 +1,37 @@
+<!-- 
+    ** Internal Css or Embedded Css **
+    How to include styles?
+    ans: using <style> tag
+        Style is added using the <style> element in the same document
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:blueviolet;
+            background-color: bisque;
+        }
+    </style>
+    <!-- here h1 is selector,  color is property,  red is value
+    (  *  ) star/asterisk selector is universal selector which is apply on everything in a document
+    -->
+    <link rel="stylesheet" href="16_style1.css">
+</head>
+<body>
+    <h1>Apna college</h1>
+    <h1>Hemanta</h1>
+    <h1>Hello World!</h1>
+    <h2>Apna college</h2>
+    <h2>Hemanta</h2>
+    <h2>Hello World!</h2>
+</body>
+</html>
+
+<!-- 
+    External Css
+    Writing CSS in a separate document & linking it with HTML file
+ -->

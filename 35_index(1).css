@@ -1,0 +1,61 @@
+div{
+    height: 123px;
+    width: 741px;
+    background-color: bisque;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(193, 89, 89);
+    border-bottom-style: dotted;
+    padding: 10px; 
+    /* we can even give padding to right, left, bottom, top individually */
+
+    margin-bottom: 10px;
+}
+
+h1{
+    border-width: 3px;
+    border-style: dashed;
+    border-color: rgb(215, 22, 215);
+    text-align: center;
+    width: 50%;
+}
+
+h1::first-letter{
+    color: darkmagenta;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    border-radius: 2px;
+    /* border-color: fuchsia; */
+    border-left-color: blue;
+    border-right-color: red;
+    border-right-style: dotted;
+    border-top-color: yellow;
+    border-top-left-radius: 15px;
+    border-bottom-color: green;
+    background-color: rgb(193, 224, 240);
+    border-width: 5px;
+    font-weight: bolder;
+    color: forestgreen;
+    font-size: x-large;
+    padding: 2px;
+}
+
+button::first-letter{
+    color: red;
+}
+
+/* 
+    MARGIN: To set spacing on the outside of border
+    we can also set margin equal to zero if it has default margin
+*/
+
+/* border shorthand: width| style| color
+
+button{
+    border: 2px solid blue;
+} */

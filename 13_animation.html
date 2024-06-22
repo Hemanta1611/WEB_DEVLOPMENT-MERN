@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:hover{
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+            border: 2px solid rgb(165, 109, 35);
+            animation-name: fontanimation;
+            animation-name: coloranimation;
+            animation-name: widthanimation;
+            animation-name: SevenAnimation;
+            animation-duration: 7s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes fontanimation{
+            from{
+                font-size: 20px;
+            }
+            to{
+                font-size: 40px;
+            }
+        }
+        @keyframes coloranimation {
+            from{
+                background-color: orangered;
+            }
+            to{
+                background-color: green;
+            }
+        }
+        @keyframes widthanimation {
+            from{
+                width: 150px;
+                height: 150px;
+            }
+            to{
+                width: 250px;
+                height: 250px;
+            }
+        }
+        @keyframes SevenAnimation {
+            0%{
+                font-size: 20px;
+                background-color: white;
+                width: 150px;
+                height: 150px;
+            }
+            14%{
+                font-size: 24px;
+                background-color: violet;
+                width: 164px;
+                height: 164px;
+                border-radius: 7%;
+                text-align: center;
+                padding: 50px;
+                color: white;
+            }
+            28%{
+                font-size: 28px;
+                background-color: indigo;
+                width: 178px;
+                height: 178px;
+                border-radius: 14%;
+                text-align: center;
+                padding: 50px;
+                color: white;
+            }
+            42%{
+                font-size: 32px;
+                background-color: blue;
+                width: 192px;
+                height: 192px;
+                border-radius: 21%;
+                text-align: center;
+                padding: 50px;
+                color: white;
+            }
+            56%{
+                font-size: 36px;
+                background-color: green;
+                width: 206px;
+                height: 206px;
+                border-radius: 28%;
+                text-align: center;
+                padding: 50px;
+                color: white;
+            }
+            70%{
+                font-size: 40px;
+                background-color: yellow;
+                width: 220px;
+                height: 220px;
+                border-radius: 35%;
+                text-align: center;
+                padding: 50px;
+                color: red;
+            }
+            84%{
+                font-size: 44px;
+                background-color: orange;
+                width: 234px;
+                height: 234px;
+                border-radius: 42%;
+                text-align: center;
+                padding: 50px;
+                color: azure;
+            }
+            100%{
+                font-size: 48px;
+                background-color: red;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 50px;
+                color: azure;
+            }
+        }
+    </style>
+    <!-- 
+        from means 0% and to means 100% 
+        we can make animation in differnet parts time using percentage
+     -->
+</head>
+<body>
+    <h1>Hemanta Kumar Bhoi</h1>
+    <div class="box">I LOVE </div>
+    <h1>My Family</h1>
+</body>
+</html>

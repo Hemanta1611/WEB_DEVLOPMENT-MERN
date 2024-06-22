@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            text-align: center;
+            border: 3px solid black;
+            margin: 20px;
+            display: inline-block;
+        }
+        #static{
+            background-color: yellowgreen;
+            position: static;
+            top: 122200px;
+            left:1234200px;
+        }
+        #relative{
+            background-color: yellowgreen;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        #absolute{
+            background-color: yellowgreen;
+            position: absolute;
+            top: 550px;
+            left: 300px;
+        }
+        #fixed{
+            background-color: yellowgreen;
+            position: fixed;
+            top: 400px;
+            left: 550px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Static Demo</h2>
+        <div></div>
+        <div id="static"></div>
+        <div></div>
+    </section>
+    <section>
+        <h2>Relative Demo</h2>
+        <div></div>
+        <div id="relative"></div>
+        <div></div>
+    </section>
+    <section>
+        <h2>Absolute Demo</h2>
+        <div></div>
+        <div id="absolute"></div>
+        <div></div>
+    </section>
+    <section>
+        <h2>Fixed Demo</h2>
+        <div></div>
+        <div id="fixed"></div>
+        <div></div>
+    </section>
+</body>
+</html>
+
+<!-- In static position ; The top, right, botoom, left and z-index properties have no effect. -->
+<!-- In relative position ; The offset is relative to itself based on the values of top, right, bottom, & left. -->
+<!-- In absoute position ; The element from the normal document flow, and no space is created for
+    the element in the page layout.
+    It is positioned relative to its closest positioned ancestor, if any;; otherwise , it is placed
+    relative to the initial containing block. -->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley Face</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        div{
+            height: 400px;
+            width: 400px;
+            background-color: white;
+        }
+        #face{
+            height: 300px;
+            width: 300px;
+            background-color: orange;
+            border-radius: 50%;
+            padding: 50px;
+        }
+        #eye1{
+            height: 50px;
+            width: 50px;
+            position:absolute;
+            top:120px;
+            left: 100px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        #eye2{
+            height: 50px;
+            width: 50px;
+            position:absolute;
+            top:120px;
+            left: 270px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        #mouth{
+            height: 50px;
+            width: 200px;
+            background-color: brown;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: relative;
+            left: 50px;
+            top:200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="face">
+            <div id="eye1"></div>
+            <div id="eye2"></div>
+            <div id="mouth"></div>
+        </div>  
+    </div>
+</body>
+</html>

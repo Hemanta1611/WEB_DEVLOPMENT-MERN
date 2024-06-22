@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- h2{
+        display: inline;
+    }
+    span{
+        display:block;
+    } -->
+
+    <!-- height & width are not working in span element
+    in inline; padding, margin work in left and right only; not in top & bottom -->
+
+    <!-- #altu{
+        background-color: yellowgreen;
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+    } -->
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: gold;
+            margin: 10px;
+            border: solid black;
+            display: inline-block;
+        }
+        #third{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- block level example -->
+    <h2>Heading 1</h2>
+    <h2>Heading 2</h2>
+    <!-- inline example -->
+    <span>span 1</span>
+    <span>span 2</span>
+    <!-- <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corrupti officiis consequuntur, soluta maiores, iste <span id="altu">INLINE</span>
+        voluptatem cum, odio quidem reiciendis earum debitis nam 
+        illum quam aliquid dolore error sit! Exercitationem, tenetur!
+    </div> -->
+    <div></div>
+    <div></div>
+    <div id="third"></div>
+</body>
+</html>

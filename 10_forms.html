@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Action attribute is used to define what actions need to be performed when a form is submitted or
+    where the form data should be sent -->
+    <!-- INPUT is used to create multiple form controls {most important form element}
+    there are multiple types of inputs that can be created using type attribute -->
+    <form action="/action">
+        text:
+        <input placeholder="Enter Random Things"><br>
+        user name:
+        <input type="text" placeholder="Enter Name" name="" id=""><br>
+        password:
+        <input type="password" placeholder="Enter Password Here" name="" id=""><br>
+        number:
+        <input type="number" placeholder="Enter Your Lucky Number" name="" id=""><br>
+        time:
+        <input type="time" name="" id=""><br>
+        color:
+        <input type="color" name="" id=""><br>
+        date:
+        <input type="date" name="" id=""><br>
+        <hr>
+
+        <!-- label elements represents a caption for an item in a user interface -->
+        <div>
+            <label for="">
+                Enter Your Name:
+                <input type="text", placeholder="Username1" id=""><br>
+            </label>
+            <label for="username2">Enter Your Name: </label>
+            <input type="text" name="" id="username2" placeholder="Username2"><br>
+        </div>
+        <div>
+            <label for="">
+                Enter Your Password:
+                <input type="password" placeholder="Password" name="" id=""><br>
+            </label>
+            <label for="password">Enter Your Password: </label>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Hello</button><br>
+        <input type="button" value="Click Me"><br>
+        <input type="submit" value="Click Buttom 2">
+
+    </form><hr>
+
+    <form action="https://www.youtube.com/results?">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+    </form>
+
+    <form action="https://www.google.com/search?">
+        <input type="text" placeholder="search in Google" name="q">
+        <button>search</button>
+    </form>
+</body>
+</html>
+<!-- id is a unique name given to element
+    when ever we gave any id name to element than we can't use same id name for any other element -->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment Form For Prabhat</title>
+    </head>
+    <body>
+        <form action="">
+            <h1 style="color:rgb(151, 94, 9)">Payment Form For Prabhat</h1>
+            <h2>Contact Information</h2>
+            <p>Name: <input type="text" name="name" required></p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    <input type="radio" name="Gender" id="male">Male <br>
+                    <input type="radio" name="Gender" id="female">Female <br>
+                    <input type="radio" name="Gender" id="TransGender">TransGender <br>
+                </p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="address" cols="30" rows="10"></textarea> </p>
+            <p>Email: <input type="email" name = "email" id="email"></p>
+            <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+            <h2 style="color:rgb(17, 101, 174)">Card Information</h2>
+            <p>
+                CARD TYPE:
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select A Card Type</option>
+                    <!-- we keep empty in value atribute of above line because if we give any value here then the value will be automatically goes to server even after selecting any other card type-->
+                    <option value="RUPAY" style="color: red;">RUPAY</option>
+                    <option value="VISA" style="color: blue;">VISA</option>
+                    <option value="MASTERCARD" style="color: green;">MASTERCARD</option>
+                </select>
+            </p>
+            <p>
+                Card Number: <input type="number" name="card_number" id="card_number">
+            </p>
+            <p>
+                Expiry Date: <input type="date" name="exp_date" id="exp_date">
+            </p>
+            <p>
+                CVV <input type="password" name="cvv" id="cvv" required>
+            </p>
+            <p>
+                <!-- <input type="reset" value="Clear Form">
+                <input type="submit" value="Pay Now"> -->
+                <button type="reset">reset</button>
+                <button type="submit">submit</button>
+            </p>
+        </form>
+    </body>
+</html>

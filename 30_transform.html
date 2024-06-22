@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            margin-top:100px;
+        }
+        div{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: #7aa874;
+            border: 2px solid black;
+            margin: 10px auto;
+        }
+        div:nth-of-type(2n){
+            background-color: #f7db6a;
+        }
+        div:nth-of-type(3n){
+            background-color: #ebb02d;
+        }
+
+        #one{
+            transform:rotate(10deg);
+        }
+        #two{
+            transform:scale(0.9, 1.2);
+        }
+        #three{
+            transform:translateX(-180px);
+        }
+        #four{
+            transform: skew(80deg);
+        }
+        #five{
+            transform: rotate(30deg) translateX(150px) skew(45deg) scale(1.2,1.2);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </section>
+</body>
+</html>

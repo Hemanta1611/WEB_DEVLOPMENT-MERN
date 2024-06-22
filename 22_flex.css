@@ -1,0 +1,76 @@
+/* 
+What is flexbox?
+It is a one-dimensional layout method for arranging items in rows or columns.
+It arrange inside the box even when the inside element are in outside 
+
+Flexbox Direction:
+flexbox-direction:row;  -- main axis, left to right
+flexbox-direction:row-reverse;  -- main axis, right to left
+flexbox-direction:column;   -- main axis, top to bottom
+flexbox-direction:column-revers;    -- main axis, bottom to top
+*/
+
+/*  Justify Contect: 
+    Tells how the browser distributes between and around content items along the main-axis
+
+*/
+#container{
+    height: 500px;
+    width: 90%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    /*  default flex direction is in row
+    flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* justify-content: flex-end; its not same as row reverse */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    flex-wrap: wrap; /* if there is not place in a line than element moved to next line */
+    /* align items: */
+    /* align-items: flex-end; */
+    align-items: center;
+    align-items: baseline;
+    justify-content: center;
+    /* align: property used in cross axis and can be done all similar things which is done in flex, justify */
+
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height: 85px;
+    width: 200px;
+    /* width: 80%; */
+    text-align: center;
+}
+
+#container div:nth-of-type(2n){
+    color: white;
+}
+#container div:nth-of-type(3n){
+    color: white;
+}
+/* 
+    Flex Sizing:
+    1. flex-basis  its sets the initial main size of a flex item.
+    if direction is row than the value of flex-basis applied on width of the element
+    if direction is column than the value of flex-basis applied on height of the element
+
+    2. flex-grow  it specifies how much of the flex container's remaining space should be assigned to the flex item's main size
+    default: flex-grow: 1;  {there is attribute of max and min- width }
+
+    3. flex-shrink  
+
+    flex shorthand:
+    :: flex- grow | flex-shrink | flex-basis
+    :: flex-grow | flex-basis
+    :: flex-grow  (unit less)
+    :: flex-basis  (unit)
+*/

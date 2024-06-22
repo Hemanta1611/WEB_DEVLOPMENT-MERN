@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- for successflul use of checkbox element we must have to same the name attribute -->
+    <form action="/server.html">
+        <input type="checkbox" name="age" id="age" checked>
+        <label for="age">I am 18+ </label><br>
+        I am 18 + : 
+        <input type="checkbox" name="age" id="age" checked><br>
+        <button type="submit">submit</button><br>
+    </form><hr>
+    <div>
+        Select any one fruit: 
+    <form action="/server" >
+        <!-- for successful use of radio element we must have to same the name attribute -->
+        <input type="radio" name="Fruit" id="apple">
+        <label for="apple">apple</label><br>
+        <input type="radio" name="Fruit" id="mango">
+        <label for="mango">mango</label><br>
+        <input type="radio" name="Fruit" id="pine apple">
+        <label for="pine apple">pine apple</label><br>
+        <!-- value attribute used to pass the info to the server in url -->
+        <input type="radio" name="Fruits" id="apple" value="apple">
+        <label for="apple">apple</label><br>
+        <input type="radio" name="Fruits" id="mango" value="mango">
+        <label for="mango">mango</label><br>
+        <input type="radio" name="Fruits" id="pine apple" value="pine apple">
+        <label for="pine apple">pine apple</label><br>
+        <button>submit</button><hr>
+        <div>
+            Choose your subject you are proficient in: 
+            <select name="subject" id="subject">
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="Dsa">Dsa</option>
+                <option value="HTML">HTML</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Mongodb">Mongodb</option>
+                <option value="Css">Css</option>
+            </select><br>
+            <label for="volume">Select Your Volume Level: </label>
+            <input type="range" name="volume" id="volume" min="0" max="100" step="5" value="70"><br>
+            Please give your valuable feedback: 
+            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Write your feedback here"></textarea>
+            <button>submit</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+h1{
+    background-color: bisque;
+    color: blueviolet;
+}
+
+/* this means if width is equal to exact given value than their will be changes according to our set */
+@media (width: 400px){
+    h1{
+        background-color:red;
+        color: white;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+}
+
+
+@media(min-width: 600px){
+    h1{
+        background-color: greenyellow;
+    }
+}
+/*  this means if width is greater than or equal to 400px then than background color will be set */
+
+
+@media (max-width: 300px){
+    h1{
+        background-color: palevioletred;
+    }
+}
+/*  this means if width is smaller than or equal to 400px then than background color will be set */
+
+@media (min-width: 650px) and (max-width: 800px){
+    h1{background-color: aqua;}
+}
+
+@media (orientation:landscape){
+    h1{
+        background-color: rgb(186, 141, 186);
+        color: brown;
+    }
+}
