@@ -1,0 +1,27 @@
+<%- include("includes/head.ejs") %>
+<!-- don't use "/" here, other wise it may create error -->
+<body>
+    <h2>This page belongs to @<%= data.name %></h2>
+    <button>Follow</button>
+    <button>Message</button>
+
+    <p>Followers: <%= data.followers %> &nbsp; &nbsp; &nbsp; &nbsp; followings: <%= data.following %></p>
+    <hr>
+
+    <% for(let post of data.posts) {%>
+        <img src="<%= post.image %>" alt="some images">
+        <p>Likes: <%= post.likes %> &nbsp; &nbsp; &nbsp; &nbsp; comment: <%= post.comments %></p>
+    <% } %>
+
+    <!-- <h3>Accounts that follow you: </h3>
+    <ul>
+        <%# for(let name of followers){ %>
+            <li><%#= name %></li>
+        <%# } %>
+    </ul> -->
+    <!-- to remove comment from ejs file remove "#" -->
+
+    <script src="/app.js"></script> 
+    <!-- we have to use "/" before app.js -->
+</body>
+</html>
