@@ -1,0 +1,30 @@
+h1{
+    color: maroon;
+}
+
+.post{
+    background-color: blanchedalmond;
+    height: 200px;
+    width: 700px;
+    /* text-align: center; */
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.user{
+    font-style: italic;
+}
+
+.new_post{
+    color: crimson;
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 350px;
+    margin-right: 350px;
+    border-radius: 5px;
+}
+
