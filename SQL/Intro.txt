@@ -1,0 +1,47 @@
+------- SQL -------
+-- MySQL --> DATABASE
+-- SQL   --> Language
+
+Q. What is a Database?
+A. It is a collection of data in a format that can be easily accessed.
+
+Q. Why databases?
+A. . Can store large data
+   . Features like security, scalability etc.
+   . Easier to search, insert, update or delete data
+
+
+SQL DB                           NoSQL DB
+- Relational Database            - Non Relational Database
+(data stored in Tables)          - (data stored in document/key-vallgraphs etc.)
+
+eg - MySQL, Oracle               eg - MongoDb, Cassandra,
+PostgreSQL etc.                  Neo4j etc.
+
+--NoSQL databases can have several advantages over SQL databases, including:
+--Flexibility:
+-NoSQL databases can store data in a more free-form way, without rigid schemas. 
+ This allows developers to focus on creating systems that better serve their customers, 
+ without worrying about schemas.
+
+--Scalability:
+-NoSQL databases can handle large volumes of data at high speed with a scale-out architecture.
+
+--Performance:
+-NoSQL databases can often outperform SQL databases because all the information is contained inside one database. 
+ This means that it's faster to perform read or write operations on one data entity compared with SQL databases.
+
+--Cost:
+-NoSQL databases often require less hardware and infrastructure than SQL databases, making them cheaper to maintain in the long run. 
+ They can also be more efficient in their use of disk space and memory because they don't need to store data in a relational format.
+
+
+
+-- SQL: Structured Query Language --
+- SQL is a programming language used to interact with relational databases.
+
+-- Schema --
+-A database schema is a blueprint that defines the logical structure, organization, and 
+ relationships of a relational database.
+
+
