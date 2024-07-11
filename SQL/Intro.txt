@@ -45,3 +45,148 @@ PostgreSQL etc.                  Neo4j etc.
  relationships of a relational database.
 
 
+
+/ -- Commands: -- /
+:: To create database:-
+- CREATE DATABASE ABC_NAME;
+- create database if not exists db_name;
+
+:: To delete database:-
+- DROP DATABASE ABC_NAME;
+- drop database if exists db_name;
+
+:: To use database:-
+- use databse_name;
+- We can have multiple databases so, to create a table in database we need to run command: "use db_name;"
+
+:: To create table:
+- create table table_name(
+   col_name1 datatype constraint,
+   col_name2 datatype constraint    // no comma(,) in last column name
+);
+
+:: To insert data into table:
+-  INSERT INTO table_name
+   VALUES
+   (101, "adam", 12),
+   (102, "bob", 14);
+
+:: To check/select all data in table:
+- select * from table_name;
+- select col1, col2 from table_name;
+
+
+commands:
+   show databases;
+   show tables;
+
+
+--- Table Queries --
+. Create Command:
+- create table table_name(
+   col_name1 datatype constraint,
+   col_name2 datatype constraint    // no comma(,) in last column name
+);
+
+- constraint are the rules for data in table, if no constraint written it means there is no rules
+- NOTNULL - column can't have a null VALUE
+  UNIQUE -  all values in column are different
+  DEFAULT - sets the default value of a column
+  CHECK  -  it can limits the value allowed in column
+
+Q. What are keys?
+A. Keys are special columns in the table
+
+- PRIMARY KEY - makes column unique & notnull but used only for one, we can make two column as primary key by combining them as one
+              - there is only 1 primary key & it should not be NULL
+  FOREIGN KEY - prevent actions that would destroy links between tables
+              - foreign key is the column of some other table where both column are same
+              - it can have duplicate & null values
+              - there can be multiple FKs
+
+   
+-- Where Clause --
+example -
+SELECT COL1, COL2 FROM table_name
+WHERE conditions;
+
+-- Frequently Used Operations -
+- AND => to check for both conditions to be true
+- OR => to check for one of the conditions to be true
+- BETWEEN => selects for a given range
+- IN => matches any value in the lists
+- NOT => to negate the given conditions
+
+- Limit Clause:
+- Sets an upper limit on number of (tuples) rows to be returned
+  select col1, col2 from table_name
+  LIMIT number;
+
+- Order By Clause:
+- To sort in ascending(ASC) or descending order(DESC)
+- select col1, col2 FROM table_name
+  order by col_name(s) ASC;
+
+
+-- Aggregate Functions:
+- Aggreagate functions perform a calculation on a set of values, and return a single value.
+. count()
+. max()
+. min()
+. sum()
+. avg()
+
+- Group By Clause:
+- groups rows that have the same values into summary rows.
+- it collects data from multiple records and groups the result by one or more column
+* generally we use group by with some aggregation functions
+- select col1, col2 from table_name group by col_name(s);
+
+- Having Clause:
+- similar to where i.e. applies some condition on rows.
+  but it is used when we want to apply any condition after grouping.
+- where is for table , having is for a group
+- select col1, col2 from table_name group by col_name(s) having condition;
+
+
+-- General Order:
+- select column(s)
+  from table_name
+  where condition
+  group by column(s)
+  having condition
+  order by columns(s) ASC;
+
+-- Update Table:
+- update table_name set col1 = val1, col2 = val2 where condition;
+- SET SQL_SAFE_UPDATES = 0; This command sets the SQL_SAFE_UPDATES variable to 0, effectively turning off the safe update mode. 
+  Remember, this change is temporary and only applies to the current session.
+ SET SQL_SAFE_UPDATES = 1; for again back to safe update state, where we can't update in database
+
+-- Delete Table:
+- delete from table_name where conditions;
+
+
+---- Table Queries ----
+- Add Column:
+   - alter table table_name
+     add column column_name datatype constraint;
+- Drop Column:
+   - alter table table_name
+     drop column column_name;
+- Rename Table:
+   - alter table table_name
+     rename to new_table_name;
+- Change Column:
+   - alter table table_name
+     change column old_name new_name new_datatype new_constraint;
+- Modify Column:(modify datatype/ constraints)
+   - alter table table_name
+     modify col_name new_datatype new_constraint;
+
+
+-> instead of deleting the table, to erase/delete table data:
+      - TRUNCATE TABLE TABLE_NAME;
+
+
+
