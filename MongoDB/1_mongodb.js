@@ -24,6 +24,25 @@
  -- to know the tables in a database: show collections
  -- to know the table data: db.collection_name.find()
 
+-- FIND in DB:
+- db.collection_name.find({key: value})
+- db.collection_name.findOne({key: value})
+
+-- FIND in DB - Query Operators:
+- Q. find students where marks > 75:   db.student.find({marks: {$gt: 75}})
+- Q. find students who live in delhi or mumbai:   db.student.find({city: {$in: ["Delhi, "Mumbai"]}})
+- Q. find studnets who scored > 75 or live in delhi:    db.student.find({$or [{marks: {$gt: 75}}, {city: "Delhi"}]})
+
+-- UPDATE IN DB:
+- db.collection_name.updateOne(<filter>, <update>, <options>):   ex: db.student.updateOne({name: "adam"}, {$set: {marks: 99}})
+- db.collection_name.deleteOne(<filter>)
+
+-- db.student.deleteMany({}) : student table/collection deleted, 
+-- db.dropDatabase() : delete database
+
+
+
+
 
 
 
