@@ -37,12 +37,22 @@
 - db.collection_name.updateOne(<filter>, <update>, <options>):   ex: db.student.updateOne({name: "adam"}, {$set: {marks: 99}})
 - db.collection_name.deleteOne(<filter>)
 
--- db.student.deleteMany({}) : student table/collection deleted, 
+-- db.student.deleteMany({}) : student table/collection data deleted,
+-- db.student.drop() : delete student table completely 
 -- db.dropDatabase() : delete database
 
 
 
+---- Mongoose ----
+-- A library that create a connection between MongoDB & Node.js JavaScript RunTime Environment
+-- It is an ODM (Object Data Modeling) libray.
 
+-- Models:
+- Model in mongoose is a class with which we construct documents.
+
+
+-- Mongoose uses Operation Buffering:
+- Mongoose lets you start using your models immediately, without waiting for mongoose to establish a connection to MongoDB.
 
 
 
