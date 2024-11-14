@@ -66,6 +66,12 @@ const checkToken = (req, res, next) => {
     }
 };
 
+// Error Handling (Express Default)
+app.get("/wrong",  (req, res) => {
+    abcd = abcd;
+});
+
+
 app.get("/api", checkToken, (req, res) => {
     res.send("data");
 });
