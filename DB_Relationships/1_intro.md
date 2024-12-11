@@ -17,3 +17,12 @@
 -> one to many / Approach 3
     one to squillons
     we store a reference to the parent document inside child
+
+
+-> Handling Deletion:
+    using Mongoose MIddleware
+    We can use 2 Middleware:
+        - Pre - run before the query is executed
+              - pre middleware functions are executed one after another, when each middleware calls next.
+        - Post - run after the query is executed
+              - 
