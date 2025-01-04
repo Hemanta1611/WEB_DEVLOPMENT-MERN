@@ -1,0 +1,22 @@
+.Product{
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.AmazonProduct{
+  border: 1px solid black;
+  border-radius: 25px;
+  padding-left: 50px;
+  margin: 10px;
+  height: 150px;
+  width: 200px;
+}
+
+.AllAmazonProducts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
