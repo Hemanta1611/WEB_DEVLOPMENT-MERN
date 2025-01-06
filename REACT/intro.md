@@ -39,5 +39,24 @@ function Title(){
 # React Props
 - Props are the information that you pass to a JSX tag.
 
+# State in React
+- The state is a built-in React object that is used to contain data or information about the component.
+- A component's state can change over time; whenever it changes, the component re-renders.
+- React `re-render` when `state value change`.
+
+# Hooks
+- Hooks were a new addition in React 16.8
+- They let you use state and other React features without writing a class.
+1. useState():
+    - useState is React Hook that lets you add a state variable to your component.
+    - const [state, setState] = useState(initialState);
+    - useState returns an array with exactly two values:
+        1. The current state. During the first render, it will match the initialState you have passed.
+        2. The set function that lets you update the state to a different values and trigger a re-render.
+
+
+# Closure:
+- A `Closure` is a feature in JavaScript where an inner function has access to the outer(enclosing) function's variable.
+
 
 
