@@ -58,5 +58,8 @@ function Title(){
 # Closure:
 - A `Closure` is a feature in JavaScript where an inner function has access to the outer(enclosing) function's variable.
 
+# setState()
+- for array and objects we can't directly push elements, before pushing elements we need to destructure (...) in array & objects.
+
 
 
