@@ -62,4 +62,9 @@ function Title(){
 - for array and objects we can't directly push elements, before pushing elements we need to destructure (...) in array & objects.
 
 
+# Component Types `class & functional`
+`Logical Comp`                   `Presentational Comp`
+- Smart component                 - Dumb component
+- State                           - No State
+
 
