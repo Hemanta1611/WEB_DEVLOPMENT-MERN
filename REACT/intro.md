@@ -68,3 +68,17 @@ function Title(){
 - State                           - No State
 
 
+# Functions as Props:
+- JS Functions are 1st Class Objects
+- This means they can be passed to a function as argument, returned from it & assigned to a variable.
+
+
+# Forms in React:
+- The standard way with Forms is to use Controlled Components. So we make React state to be the "single source of truth".
+- Then the React component that renders a form also controls what happens in that form on subsequent user input. An input form element whose value is controlled by React is this way is called as "controlled component".
+
+2. useEffect():
+    - The Effect Hook lets you perform side effects in function components
+    - Data fetching, setting up a subscription, and manually changing the DOM in React component are all examples of side effects.
+
+
