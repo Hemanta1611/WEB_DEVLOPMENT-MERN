@@ -33,7 +33,7 @@ button{
     /* border-color: fuchsia; */
     border-left-color: blue;
     border-right-color: red;
-    border-right-style: dotted;
+    border-left-style: dotted;
     border-top-color: yellow;
     border-top-left-radius: 15px;
     border-bottom-color: green;

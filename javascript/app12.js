@@ -1,4 +1,10 @@
 /* 
+async: makes a function return a promise: function giving promise
+await: makes a function wait for a promise: function taking/waiting for promise
+     : await keyword can only be used inside an async function.
+     : it makes the function pause the execution and wait for a resolved promise before it continues
+
+
 API: application programming interface
 --> API returns data from server in the form of JSON.
 --> API is url, link or endpoint
